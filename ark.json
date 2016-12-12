@@ -1,0 +1,780 @@
+{
+    "recipes": {
+        "Campfire": {
+            "level": 2,
+            "ep": 3,
+            "xp": 3.5,
+            "time": 0,
+            "ingredients": {
+                "Thatch": 12,
+                "Flint": 1,
+                "Wood": 2,
+                "Stone": 16
+            }
+        },
+        "Torch": {
+            "level": 1,
+            "ep": 0,
+            "xp": 0.3,
+            "time": 0,
+            "ingredients": {
+                "Flint": 1,
+                "Wood": 1,
+                "Stone": 1
+            }
+        },
+        "Stone Pick": {
+            "level": 1,
+            "ep": 0,
+            "xp": 0.4,
+            "time": 0,
+            "ingredients": {
+                "Stone": 1,
+                "Wood": 1,
+                "Thatch": 10
+            }
+        },
+        "Metal Pick": {
+            "station": ["Smithy"],
+            "level": 25,
+            "ep": 8,
+            "xp": 1,
+            "time": 0,
+            "prereq": ["Stone Pick"],
+            "ingredients": {
+                "Metal Ingot": 1,
+                "Wood": 1,
+                "Hide": 10
+            }
+        },
+        "Stone Hatchet": {
+            "level": 2,
+            "ep": 3,
+            "xp": 0.4,
+            "time": 0,
+            "ingredients": {
+                "Flint": 1,
+                "Wood": 1,
+                "Thatch": 10
+            }
+        },
+        "Metal Hatchet": {
+            "station": ["Smithy"],
+            "level": 25,
+            "ep": 8,
+            "xp": 1.4,
+            "time": 0,
+            "prereq": ["Stone Hatchet"],
+            "ingredients": {
+                "Metal Ingot": 8,
+                "Wood": 1,
+                "Hide": 10
+            }
+        },
+        "Metal Sickle": {
+            "station": ["Smithy"],
+            "level": 30,
+            "ep": 12,
+            "xp": 1.4,
+            "time": 0,
+            "prereq": ["Metal Hatchet", "Metal Pick"],
+            "ingredients": {
+                "Metal Ingot": 18,
+                "Wood": 4,
+                "Hide": 16
+            }
+        },
+        "Slingshot": {
+            "level": 5,
+            "ep": 6,
+            "xp": 0.95,
+            "time": 0,
+            "ingredients": {
+                "Hide": 1,
+                "Wood": 5,
+                "Fiber": 20
+            }
+        },
+        "Stone Arrow": {
+            "level": 5,
+            "ep": 2,
+            "xp": 0.025,
+            "time": 0,
+            "ingredients": {
+                "Flint": 1,
+                "Thatch": 2,
+                "Fiber": 2
+            }
+        },
+        "Tranquilizer Arrow": {
+            "level": 20,
+            "ep": 8,
+            "xp": 0.025,
+            "time": 0,
+            "ingredients": {
+                "Stone Arrow": 1,
+                "Narcotic": 1
+            }
+        },
+        "Bow": {
+            "level": 15,
+            "ep": 11,
+            "xp": 5,
+            "time": 0,
+            "prereq": ["Slingshot"],
+            "ingredients": {
+                "Wood": 15,
+                "Fiber": 50
+            }
+        },
+        "Crossbow": {
+            "station": ["Smithy"],
+            "level": 25,
+            "ep": 12,
+            "xp": 9,
+            "time": 0,
+            "prereq": ["Bow"],
+            "ingredients": {
+                "Metal Ingot": 7,
+                "Wood": 10,
+                "Fiber": 35
+            }
+        },
+        "Spyglass": {
+            "level": 10,
+            "ep": 2,
+            "xp": 2,
+            "time": 0,
+            "ingredients": {
+                "Wood": 5,
+                "Hide": 10,
+                "Fiber": 10,
+                "Crystal": 2
+            }
+        },
+        "Parachute": {
+            "level": 15,
+            "ep": 6,
+            "xp": 2.9,
+            "time": 0,
+            "ingredients": {
+                "Thatch": 40,
+                "Fiber": 20,
+                "Hide": 10
+            }
+        },
+        "Flare Gun": {
+            "level": 10,
+            "ep": 6,
+            "xp": 0.3,
+            "time": 0,
+            "prereq": ["Gunpowder"],
+            "ingredients": {
+                "Wood": 4,
+                "Fiber": 2,
+                "Sparkpowder": 10,
+                "Gunpowder": 2
+            }
+        },
+        "Shotgun": {
+            "station": ["Smithy"],
+            "level": 35,
+            "ep": 18,
+            "xp": 105.8,
+            "time": 0,
+            "prereq": ["Flare Gun"],
+            "ingredients": {
+                "Metal Ingot": 80,
+                "Wood": 20,
+                "Hide": 25
+            }
+        },
+        "Simple Bullet": {
+            "station": ["Smithy"],
+            "crafts": 2,
+            "level": 30,
+            "ep": 6,
+            "xp": 0.4,
+            "time": 0,
+            "prereq": ["Gunpowder"],
+            "ingredients": {
+                "Metal Ingot": 1,
+                "Gunpowder": 6
+            }
+        },
+        "Simple Shotgun Ammo": {
+            "station": ["Smithy"],
+            "level": 35,
+            "ep": 6,
+            "xp": 0.3,
+            "time": 0,
+            "prereq": ["Simple Bullet"],
+            "ingredients": {
+                "Simple Bullet": 3,
+                "Metal Ingot": 1,
+                "Gunpowder": 3
+            }
+        },
+        "Wooden Club": {
+            "level": 3,
+            "ep": 4,
+            "xp": 0.7,
+            "time": 0,
+            "ingredients": {
+                "Wood": 4,
+                "Fiber": 15
+            }
+        },
+        "Metal Sword": {
+            "station": ["Smithy"],
+            "level": 30,
+            "ep": 11,
+            "xp": 6.6,
+            "time": 0,
+            "prereq": ["Wooden Club"],
+            "ingredients": {
+                "Metal Ingot": 50,
+                "Wood": 1,
+                "Hide": 15
+            }
+        },
+        "Spear": {
+            "station": ["Smithy"],
+            "level": 2,
+            "ep": 3,
+            "xp": 0.6,
+            "time": 0,
+            "ingredients": {
+                "Flint": 2,
+                "Wood": 8,
+                "Fiber": 12
+            }
+        },
+        "Pike": {
+            "station": ["Smithy"],
+            "level": 25,
+            "ep": 10,
+            "xp": 6.0,
+            "time": 0,
+            "prereq": ["Spear"],
+            "ingredients": {
+                "Metal Ingot": 10,
+                "Wood": 10,
+                "Hide": 20
+            }
+        },
+        "Cloth Pants": {
+            "level": 2, "ep": 3, "xp": 1, "time": 0,
+            "ingredients": { "Fiber": 50 }
+        },
+        "Cloth Shirt": {
+            "level": 2, "ep": 3, "xp": 0.8,
+            "time": 0,
+            "ingredients": { "Fiber": 40 }
+        },
+        "Cloth Boots": {
+            "level": 3, "ep": 3, "xp": 0.8,
+            "time": 0,
+            "ingredients": { "Hide": 6, "Fiber": 25 }
+        },
+        "Cloth Gloves": {
+            "level": 3, "ep": 3, "xp": 0.6,
+            "time": 0,
+            "ingredients": {
+                "Hide": 4,
+                "Fiber": 20
+            }
+        },
+        "Cloth Hat": {
+            "level": 3,
+            "ep": 3,
+            "xp": 0.6,
+            "time": 0,
+            "ingredients": {
+                "Fiber": 10
+            }
+        },
+        "Hide Pants": {
+            "level": 15,
+            "ep": 9,
+            "xp": 1.4,
+            "time": 0,
+            "prereq": ["Cloth Pants"],
+            "ingredients": {
+                "Hide": 25,
+                "Fiber": 10
+            }
+        },
+        "Hide Shirt": {
+            "level": 16,
+            "ep": 6,
+            "xp": 1.5,
+            "time": 0,
+            "prereq": ["Cloth Shirt"],
+            "ingredients": {
+                "Hide": 20,
+                "Fiber": 8
+            }
+        },
+        "Hide Boots": {
+            "level": 20,
+            "ep": 7,
+            "xp": 0.7,
+            "time": 0,
+            "prereq": ["Cloth Boots"],
+            "ingredients": {
+                "Hide": 12,
+                "Fiber": 5
+            }
+        },
+        "Hide Gloves": {
+            "level": 20,
+            "ep": 7,
+            "xp": 0.5,
+            "time": 0,
+            "prereq": ["Cloth Gloves"],
+            "ingredients": {
+                "Hide": 10,
+                "Fiber": 4
+            }
+        },
+        "Hide Hat": {
+            "level": 20,
+            "ep": 9,
+            "xp": 0.8,
+            "time": 0,
+            "prereq": ["Cloth Hat"],
+            "ingredients": {
+                "Hide": 15,
+                "Fiber": 6
+            }
+        },
+        "Charcoal": {
+            "station": ["Campfire", "Refining Forge",
+                        "Industrial Forge"],
+            "time": 0,
+            "ingredients": { "Wood": 1 }
+        },
+        "Metal Ingot": {
+            "station": ["Refining Forge", "Industrial Forge"],
+            "time": 20,
+            "ingredients": { "Metal": 2 }
+        },
+        "Cementing Paste": {
+            "station": ["Mortar And Pestle"],
+            "level": 10,
+            "ep": 3,
+            "xp": 1.2,
+            "time": 0,
+            "ingredients": {
+                "Chitin/Keratin": 4,
+                "Stone": 8
+            }
+        },
+        "Narcotic": {
+            "station": ["Mortar And Pestle"],
+            "level": 5,
+            "ep": 6,
+            "xp": 2,
+            "time": 0,
+            "ingredients": {
+                "Narcoberry": 5,
+                "Spoiled Meat": 1
+            }
+        },
+        "Stimulant": {
+            "station": ["Mortar And Pestle"],
+            "level": 10,
+            "ep": 6,
+            "xp": 0.05,
+            "time": 0,
+            "ingredients": {
+                "Stimberry": 5,
+                "Sparkpowder": 2
+            }
+        },
+        "Sparkpowder": {
+            "station": ["Mortar And Pestle"],
+            "crafts": 2,
+            "level": 5,
+            "ep": 3,
+            "xp": 0.05,
+            "time": 5,
+            "ingredients": {
+                "Flint": 2,
+                "Stone": 1
+            }
+        },
+        "Gunpowder": {
+            "station": ["Mortar And Pestle"],
+            "level": 10,
+            "ep": 2,
+            "xp": 0.05,
+            "time": 1,
+            "ingredients": {
+                "Sparkpowder": 1,
+                "Charcoal": 1
+            }
+        },
+        "Smithy": {
+            "level": 25,
+            "ep": 16,
+            "xp": 6.3,
+            "time": 0,
+            "ingredients": {
+                "Metal Ingot": 5,
+                "Stone": 50,
+                "Wood": 30,
+                "Hide": 20
+            }
+        },
+        "Refining Forge": {
+            "level": 20,
+            "ep": 21,
+            "xp": 18.6,
+            "time": 0,
+            "ingredients": {
+                "Stone": 125,
+                "Flint": 6,
+                "Hide": 65,
+                "Wood": 20,
+                "Fiber": 40
+            }
+        },
+        "Mortar And Pestle": {
+            "level": 5,
+            "ep": 6,
+            "xp": 7.2,
+            "time": 5,
+            "ingredients": {
+                "Stone": 65,
+                "Hide": 15
+            }
+        },
+        "Metal Foundation": {
+            "station": ["Smithy"],
+            "level": 30,
+            "ep": 24,
+            "xp": 23,
+            "time": 0,
+            "prereq": ["Stone Foundation"],
+            "ingredients": {
+                "Cementing Paste": 15,
+                "Metal Ingot": 50
+            }
+        },
+        "Metal Wall": {
+            "station": ["Smithy"],
+            "level": 30,
+            "ep": 15,
+            "xp": 4.6,
+            "time": 0,
+            "prereq": ["Stone Ceiling"],
+            "ingredients": {
+                "Cementing Paste": 7,
+                "Metal Ingot": 25
+            }
+        },
+        "Metal Ceiling": {
+            "station": ["Smithy"],
+            "level": 35,
+            "ep": 15,
+            "xp": 12.8,
+            "time": 0,
+            "prereq": ["Stone Ceiling"],
+            "ingredients": {
+                "Cementing Paste": 10,
+                "Metal Ingot": 35
+            }
+        },
+        "Metal Doorframe": {
+            "station": ["Smithy"],
+            "level": 30,
+            "ep": 24,
+            "xp": 5.5,
+            "time": 0,
+            "prereq": ["Stone Doorframe", "Metal Wall"],
+            "ingredients": {
+                "Cementing Paste": 6,
+                "Metal Ingot": 20
+            }
+        },
+        "Metal Door": {
+            "station": ["Smithy"],
+            "level": 35,
+            "ep": 12,
+            "time": 0,
+            "ingredients": {
+                "Cementing Paste": 4,
+                "Metal Ingot": 10
+            }
+        },
+        "Metal Ramp": {
+            "station": ["Smithy"],
+            "level": 35,
+            "ep": 12,
+            "xp": 16,
+            "time": 0,
+            "prereq": ["Wooden Ramp", "Metal Ceiling"],
+            "ingredients": {
+                "Cementing Paste": 10,
+                "Metal Ingot": 35
+            }
+        },
+        "Stone Foundation": {
+            "level": 20,
+            "ep": 6,
+            "time": 0,
+            "ingredients": {
+                "Stone": 80,
+                "Wood": 40,
+                "Thatch": 30
+            }
+        },
+        "Stone Ceiling": {
+            "level": 20,
+            "ep": 6,
+            "time": 0,
+            "ingredients": {
+                "Stone": 60,
+                "Wood": 30,
+                "Thatch": 20
+            }
+        },
+        "Stone Wall": {
+            "level": 15,
+            "ep": 8,
+            "time": 0,
+            "ingredients": {
+                "Stone": 40,
+                "Wood": 20,
+                "Thatch": 15
+            }
+        },
+        "Stone Doorframe": {
+            "level": 20,
+            "ep": 6,
+            "time": 0,
+            "ingredients": {
+                "Stone": 30,
+                "Wood": 16,
+                "Thatch": 12
+            }
+        },
+        "Stone Windowframe": {
+            "level": 25,
+            "ep": 11,
+            "time": 0,
+            "ingredients": {
+                "Stone": 35,
+                "Wood": 18,
+                "Thatch": 12
+            }
+        },
+        "Stone Hatchframe": {
+            "level": 25,
+            "ep": 8,
+            "time": 0,
+            "ingredients": {
+                "Stone": 50,
+                "Wood": 25,
+                "Thatch": 15
+            }
+        },
+        "Reinforced Wooden Door": {
+            "level": 20,
+            "ep": 4,
+            "time": 0,
+            "ingredients": {
+                "Stone": 20,
+                "Wood": 14,
+                "Thatch": 8
+            }
+        },
+        "Reinforced Window": {
+            "level": 30,
+            "ep": 10,
+            "time": 0,
+            "ingredients": {
+                "Stone": 8,
+                "Wood": 4,
+                "Thatch": 3
+            }
+        },
+        "Reinforced Trapdoor": {
+            "level": 30,
+            "ep": 10,
+            "time": 0,
+            "ingredients": {
+                "Stone": 20,
+                "Wood": 14,
+                "Thatch": 8
+            }
+        },
+        "Wooden Railing": {
+            "level": 10,
+            "ep": 3,
+            "xp": 0.924,
+            "time": 0,
+            "prereq": ["Wooden Wall"],
+            "ingredients": {
+                "Wood": 20,
+                "Thatch": 5,
+                "Fiber": 3
+            }
+        },
+        "Stone Railing": {
+            "level": 20,
+            "ep": 4,
+            "xp": 1.34,
+            "time": 0,
+            "prereq": ["Wooden Railing", "Stone Wall"],
+            "ingredients": {
+                "Stone": 20,
+                "Wood": 10,
+                "Thatch": 7
+            }
+        },
+        "Wooden Ladder": {
+            "level": 15,
+            "ep": 6,
+            "xp": 0.5,
+            "time": 0,
+            "ingredients": {
+                "Wood": 4,
+                "Thatch": 7,
+                "Fiber": 4
+            }
+        },
+        "Wooden Ramp": {
+            "level": 15,
+            "ep": 3,
+            "time": 0,
+            "ingredients": {
+                "Wood": 60,
+                "Thatch": 15,
+                "Fiber": 10
+            }
+        },
+        "Hide Sleeping Bag": {
+            "level": 3,
+            "ep": 3,
+            "xp": 3.1,
+            "time": 0,
+            "ingredients": {
+                "Fiber": 15,
+                "Hide": 25
+            }
+        },
+        "Simple Bed": {
+            "level": 5,
+            "ep": 8,
+            "xp": 8.1,
+            "time": 0,
+            "prereq": ["Hide Sleeping Bag"],
+            "ingredients": {
+                "Wood": 15,
+                "Thatch": 80,
+                "Fiber": 30,
+                "Hide": 40
+            }
+        },
+        "Storage Box": {
+            "level": 5,
+            "ep": 6,
+            "xp": 3.7,
+            "time": 0,
+            "ingredients": {
+                "Wood": 25,
+                "Thatch": 20,
+                "Fiber": 10
+            }
+        },
+        "Large Storage Box": {
+            "level": 15,
+            "ep": 9,
+            "xp": 7.3,
+            "time": 0,
+            "prereq": ["Storage Box"],
+            "ingredients": {
+                "Wood": 50,
+                "Thatch": 35,
+                "Fiber": 25
+            }
+        },
+        "Preserving Bin": {
+            "level": 20,
+            "ep": 9,
+            "xp": 6.9,
+            "time": 0,
+            "prereq": ["Storage Box"],
+            "ingredients": {
+                "Stone": 30,
+                "Wood": 30,
+                "Thatch": 15,
+                "Fiber": 20
+            }
+        },
+        "Wooden Raft": {
+            "level": 15,
+            "ep": 11,
+            "xp": 91,
+            "time": 0,
+            "ingredients": {
+                "Wood": 250,
+                "Fiber": 125,
+                "Hide": 75
+            }
+        },
+        "Small Crop Plot": {
+            "level": 10,
+            "ep": 9,
+            "xp": 5.3,
+            "time": 0,
+            "ingredients": {
+                "Stone": 25,
+                "Wood": 20,
+                "Thatch": 10,
+                "Fiber": 15
+            }
+        },
+        "Medium Crop Plot": {
+            "level": 25,
+            "ep": 12,
+            "xp": 10.7,
+            "time": 0,
+            "prereq": ["Small Crop Plot"],
+            "ingredients": {
+                "Stone": 50,
+                "Wood": 40,
+                "Thatch": 20,
+                "Fiber": 30
+            }
+        },
+        "Large Crop Plot": {
+            "level": 35,
+            "ep": 15,
+            "xp": 21.4,
+            "time": 0,
+            "prereq": ["Medium Crop Plot"],
+            "ingredients": {
+                "Stone": 100,
+                "Wood": 80,
+                "Thatch": 40,
+                "Fiber": 60
+            }
+        },
+        "Compost Bin": {
+            "level": 15,
+            "ep": 6,
+            "xp": 6.0,
+            "time": 0,
+            "prereq": ["Storage Box"],
+            "ingredients": {
+                "Wood": 50,
+                "Thatch": 15,
+                "Fiber": 12
+            }
+        }
+    }
+}
